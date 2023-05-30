@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+@font-face {
+    font-family: 'lunaregular';
+    src: url('./fonts/luna-webfont.woff2') format('woff2'),
+         url('./fonts/luna-webfont.woff') format('woff'),
+         url('./fonts/Luna.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#hero {
+  background: url('./background/neurons.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding-bottom: 1%;
+}
+
+nav {
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  transition: ease 0.5s;
+}
+
+a:hover{
+  color: red;
+}
+
+#contenu {
+  text-align: center;
+  padding: 10%;
+}
+
+#contenu a {
+  color: red;
+  border: 1px solid red;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#contenu a:hover{
+  color: white;
+  background-color: rgba(178,32,19,0.8);
+  transition: ease 1s;
+}
+
+#contenu img{
+  transition: 1s;
+}
+
+#contenu img:hover{
+  transform: rotate(360deg) scale(1.5);
+}
+
+#bandeau {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: rgba(255,255,255,0.4);
+}
+
+h1 {
+  font-size: 24px;
+  font-family: "lunaregular";
+}
+
+h2 {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+}
+
+h3{
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+}
+
+/*section hero done styling -----------------------*/
+
+#apropos{
+  display: flex;
+}
+
+#apropos_image{
+  flex:1;
+  padding: 20px;
+}
+
+#apropos_image img{
+  flex: 1;
+  max-width: 100%;
+}
+
+#apropos_texte{
+  flex: 2;
+  padding: 20px;
+  text-align: justify;
+  font-family: 'DM Sans';
+  
+}
+
+#services{
+  display:flex;
+  background-color: #666;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.services-item{
+  flex:1;
+}
+
+.services-item p{
+  padding: 20px;
+  text-align: justify;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+footer a{
+  color: black;
+}
+
+footer a:hover{
+  color: #779DFA;
+}
+
+.social{
+  padding: 20px;
+}
+
+@media screen and (max-width: 414px){
+  #apropos {
+    flex-direction: column;
+  } 
+
+  #services {
+    flex-direction: column;
+  }
+
+  nav a{
+    display: block;
+    padding: 10px;
+  }
+}
+
