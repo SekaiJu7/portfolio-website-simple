@@ -18,6 +18,32 @@ html {
 
 }
 
+
+/* Animations */
+@keyframes slideInLeft{
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transorm: translateX(0)
+  }
+}
+@keyframes slideInRight{
+  from {
+    transform: translateX(300px);
+}
+  to {
+    transform: translateX(0);
+}
+}
+
+.slideInLeft{
+  animation: slideInLeft 1s ease-in;
+}
+.slideInRight{
+  animation: slideInRight 1s ease-in;
+}
+
 #hero {
   background: url('./background/neurons.jpg');
   background-repeat: no-repeat; 
@@ -77,12 +103,17 @@ a:hover{
 h1 {
   font-size: 24px;
   font-family: "lunaregular";
+  /*surement ici tu peux rajouter le nécessaire pour l'animation*/
 }
 
 h2 {
   font-size: 18px;
   font-family: "Merriweather", serif;
 }
+
+
+
+
 
 h3{
   font-size: 18px;
